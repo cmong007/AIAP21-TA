@@ -163,7 +163,7 @@ The detailed performance for each tuned model on the test set is as follows:
 | **Logistic Regression** | 0.5291               | 0.4896            | 0.5044              | 0.7437       |
 
 
-![Random Forest Confusion Matrix](images\random_forest_confusion_matrix.png)
+![Random Forest Confusion Matrix](images/random_forest_confusion_matrix.png)
 
 
 **Comparison**
