@@ -1,5 +1,4 @@
 import pandas as pd
-import warnings
 import seaborn as sns
 import matplotlib.pyplot as plt
 import os
@@ -12,8 +11,6 @@ from sklearn.linear_model import LogisticRegression
 from xgboost import XGBClassifier
 from sklearn.metrics import classification_report, accuracy_score, roc_auc_score, confusion_matrix
 
-# Suppress the specific FutureWarning
-warnings.filterwarnings("ignore", category=FutureWarning)
 
 def load_and_prepare_data(file_path: str) -> (pd.DataFrame, pd.Series, LabelEncoder):
     """
@@ -101,7 +98,7 @@ def run_evaluation_pipeline(X_train, X_test, y_train, y_test, le, models, param_
 
         pipeline = Pipeline(steps=[('preprocessor', preprocessor), ('classifier', model)])
         
-        grid_search = GridSearchCV(pipeline, param_grids[name], cv=cv_strategy, n_jobs=-1, scoring='accuracy')
+        grid_search = GridSearchCV(pipeline, param_grids[name], cv=cv_strategy, n_jobs=-1, scoring='f1_macro')
 
         print("Tuning hyperparameters...")
         grid_search.fit(X_train, y_train)
