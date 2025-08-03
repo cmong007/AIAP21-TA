@@ -26,7 +26,7 @@ aiap-ongchunming-613A/
 
 1.  **Clone the Repository**
     ```bash
-    git clone <your-repo-url>
+    git clone https://github.com/cmong007/aiap21-ongchunming-613A.git
     ```
 2.  **Create and Activate a Virtual Environment**
     ```bash
@@ -62,7 +62,7 @@ flowchart TD
     B --> C[Split Train/Test Data];
     B --> D[Encode Target Variable y];
 
-    C --> E{Conditional Preprocessing};
+    C --> E[Conditional Preprocessing];
     E -- Random Forest --> F[OrdinalEncoder for Categorical];
     E -- LogReg/XGBoost --> G[OneHotEncoder for Categorical];
 

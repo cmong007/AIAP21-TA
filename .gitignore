@@ -12,7 +12,7 @@ data/
 *.db
 
 # Images and Plots
-images/
+# images/
 
 # OS-specific files
 .DS_Store
