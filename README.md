@@ -1,8 +1,5 @@
 # AIAP End-to-End Activity-Level ML Pipeline
 
-**Full Name (as in NRIC):** `Ong Chun Ming`\
-**Email Address:** `ongchunming96@gmail.com`
-
 ---
 
 ## Repository Structure
